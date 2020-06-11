@@ -1,0 +1,29 @@
+Package: ifish
+Title: Basic data manipulation for ifish database 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Elle",
+           family = "Wibisono",
+           role = c("aut", "cre"),
+           email = "ellewibisono@uri.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package is used to generate tables from the ifish database generated from i-fish community. 
+  Basic data analysis includes filtering fishing coordinates and generating top species lists. 
+License: MIT +file LICENSE 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+ dplyr, 
+ rgdal,
+ sf, 
+ maptools, 
+ rgeos, 
+ lubridate, 
+ akima, 
+ geosphere, 
+ raster,
+ purrr, 
+ data.table
+
+
