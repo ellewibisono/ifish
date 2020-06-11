@@ -2,12 +2,11 @@
 #'
 
 #Function to generate a table of species and its life history parameters
-#' @param df2 ifish postgresQL data frame
+#' @param df2 ifish postgresQL data frame containing fish species, length, and biological parameters
 #'
 lhparam <- function(df2){
   #remove blank genus and species row
   df2 <- df2[!(df2$fish_genus==""), ]
-  df2 <- df2[!(df2$fish_species==""), ]
   df2 <- df2  %>%setNames(make.unique(names(.))) %>%
     dplyr::filter(program_type=='Snapper')
   #Life history parameters

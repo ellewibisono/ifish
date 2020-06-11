@@ -1,7 +1,7 @@
 #' Match catch species with fishing coordinates and bathymetry
 #'
 #' @param dffish ifish postgresQL data frame containing fish species, length data, and boat or landing information.
-#' @param dftracker ifish postgresQL data frame containing tracker information, including latitude, longitude, and date/time.
+#' @param dftracker ifish postgresQL data frame containing tracker information, including latitude, longitude, and date-time.
 #' @param depthraster bathymetry raster file
 #' @return data frame that combines catch data from CODRS photographs and fishing coordinates
 #'         from Spot Trace. Fishing ground was matched with photographs based on first_codrs_photo_date and date of fishing coordinates.
