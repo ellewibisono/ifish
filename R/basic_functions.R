@@ -18,7 +18,7 @@ lhparam <- function(df2){
 
 #'Number of vessels per fishing gear
 #'@param df2 ifish postgresQL data frame
-#'
+#'@export
 #Number of captains per fishing gear
 df2cap <- function(df2){
   df2 <- df2 %>% distinct (boat_code, .keep_all = TRUE) %>% group_by(fishing_gear) %>% dplyr::summarize(n())
@@ -26,7 +26,7 @@ df2cap <- function(df2){
 
 #'Generate table of the top species in the catch by frequency
 #'@param df2 ifish postgresQL data frame
-#'
+#'@export
 #Function to generate a table of the top species in the catch (by frequency)
 species_freq <- function(df2){
   by_freq <- df2 %>% setNames(make.unique(names(.))) %>%
@@ -37,7 +37,7 @@ species_freq <- function(df2){
 
 #' Generate table for the top species in the catch by frequency and by fishing gear
 #' @param df2 ifish postgresQL data frame
-#'
+#' @export
 #By different fishing gear
 species_freq_gear <- function(df2){
   by_gear <- df2 %>% setNames(make.unique(names(.))) %>%
@@ -50,6 +50,7 @@ species_freq_gear <- function(df2){
 
 #' Generate table for the top species in the catch by weight
 #' @param df2 ifish postgresQL data frame
+#' @export
 #Check the top species in the catch (by weight)
 species_biomass <-function(df2) {
   biomass <-  df2 %>% setNames(make.unique(names(.))) %>%
@@ -62,6 +63,7 @@ species_biomass <-function(df2) {
 
 #' Generate table for the top species in the catch by weight and fishing gear
 #' @param df2 ifish postgresQL data frame
+#' @export
 #By different fishing gear
 species_biomass_gear <- function(df2){
   biomass_gear <- df2 %>% setNames(make.unique(names(.))) %>%

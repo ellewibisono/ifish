@@ -18,6 +18,7 @@ simple_distance<-function(lon1,lat1,lon2,lat2){
 #' @param df the ifish dataframe; must contain tables: ifish_tracker, ifish_boat, ifish_findmespot
 #' @param depthraster the depth raster file, for example, GEBCO file
 #' @return original data frame with fishing coordinates, depth, and secondary bathymetric information added.
+#' @export
 
 
 fishing_grounds<- function(df, depthraster){

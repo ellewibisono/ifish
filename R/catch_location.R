@@ -6,7 +6,7 @@
 #' @return data frame that combines catch data from CODRS photographs and fishing coordinates
 #'         from Spot Trace. Fishing ground was matched with photographs based on first_codrs_photo_date and date of fishing coordinates.
 #'         Fishing trips with no corresponding fishing coordinates are grouped by boat name and assigned its mean latitude and mean longitude.
-#'
+#' @export
 
 catch_location <- function(dffish, dftracker, depthraster){
 #filter for snapper only
