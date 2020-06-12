@@ -7,7 +7,7 @@
 lhparam(df2)
 }
 \arguments{
-\item{df2}{ifish postgresQL data frame}
+\item{df2}{ifish postgresQL data frame containing fish species, length, and biological parameters}
 }
 \description{
 Life-history parameters

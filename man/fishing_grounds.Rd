@@ -7,7 +7,7 @@
 fishing_grounds(df, depthraster)
 }
 \arguments{
-\item{df}{the ifish dataframe that is imported into R must contain tables: ifish_tracker, ifish_boat, ifish_findmespot}
+\item{df}{the ifish dataframe; must contain tables: ifish_tracker, ifish_boat, ifish_findmespot}
 
 \item{depthraster}{the depth raster file, for example, GEBCO file}
 }

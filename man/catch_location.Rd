@@ -7,9 +7,9 @@
 catch_location(dffish, dftracker, depthraster)
 }
 \arguments{
-\item{dffish}{ifish postgresQL data frame containing fish species, length data, and boat/landing information.}
+\item{dffish}{ifish postgresQL data frame containing fish species, length data, and boat or landing information.}
 
-\item{dftracker}{ifish postgresQL data frame containing tracker information, including latitude, longitude, and date/time.}
+\item{dftracker}{ifish postgresQL data frame containing tracker information, including latitude, longitude, and date-time.}
 
 \item{depthraster}{bathymetry raster file}
 }
