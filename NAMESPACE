@@ -3,6 +3,7 @@
 export(catch_location)
 export(df2cap)
 export(fishing_grounds)
+export(simple_distance)
 export(species_biomass)
 export(species_biomass_gear)
 export(species_freq)
