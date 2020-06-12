@@ -6,6 +6,7 @@
 #'@param lon2 longitude of point 2
 #'@param lat2 latitude of point 2
 #'@return the distance between two points. If lat1, lon1, lat2, and lon2 were supplied as a vector, it will return a vector of distances.
+#'@export
 
 simple_distance<-function(lon1,lat1,lon2,lat2){
   elements<-length(lon1)
